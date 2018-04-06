@@ -11,10 +11,10 @@ public class TestParole {
 		
 		String[] parole = new String[dim]; // elenco di parole random
 		String s; int j = 0;
-		while (parole.length < dim) {
+		while (j<dim) {
 			s = "";
 			for (int i=0; i<10; i++) {
-				int ints = (int)(Math.random()*256) + 1; // carattere random
+				int ints = (int)(Math.random()*25) + 97; // intero random da 97 a 97+25=122 codice ASCII
 				s += (char) ints;
 			}
 			parole[j] = s;
